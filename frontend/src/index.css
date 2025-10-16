@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.active {
+  border-bottom: 2px solid #ef4444; /* Tailwind red-500 */
+  color: #ef4444;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+/* Optional: hover effect for all links */
+a:hover {
+  color: #ef4444;
+  transition: color 0.2s ease;
+}
