@@ -12,11 +12,7 @@ const app = express()
 const port = process.env.PORT || 4000
 
 // Middlewares
-app.use(cors({
-  origin: ["https://foodrecipeblog.vercel.app"], // frontend domain
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(cors())
 app.use(express.json())
 
 connectDB()

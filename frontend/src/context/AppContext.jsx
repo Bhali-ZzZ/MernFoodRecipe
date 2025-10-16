@@ -1,10 +1,11 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import { toast } from 'react-toastify'
 
 
 export const AppContext = createContext()
 
-const AppContextProvider = (prop)=>{
+const AppContextProvider = (props)=>{
 
     const backendUrl = import.meta.env.VITE_BACKEND_URL
 
@@ -100,7 +101,7 @@ const AppContextProvider = (prop)=>{
 
     return (
         <AppContext.Provider value={value}>
-            {prop.children}
+            {props.children}
         </AppContext.Provider>
     )
 
